@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihat Öğretmen Etkinlikleri</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: #f4f7f6; color: #333; display: flex; flex-direction: column; min-height: 100vh; }
+        header { background: linear-gradient(135deg, #4a90e2, #50e3c2); color: white; text-align: center; padding: 3rem 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.1rem; opacity: 0.9; }
+        main { flex: 1; padding: 2rem 1rem; max-width: 800px; width: 100%; margin: 0 auto; }
+        .welcome-box { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 2rem; text-align: center; }
+        .section-title { font-size: 1.4rem; margin-bottom: 1rem; color: #4a90e2; border-bottom: 2px solid #e1e8ed; padding-bottom: 0.5rem; }
+        .grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+        @media(min-width: 600px) { .grid { grid-template-columns: 1fr 1fr; } }
+        .card { background: white; border-left: 5px solid #4a90e2; padding: 1.2rem; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); transition: transform 0.2s; text-decoration: none; color: inherit; display: block; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .card h3 { color: #333; margin-bottom: 0.5rem; }
+        .card p { font-size: 0.9rem; color: #666; }
+        .card .btn { display: inline-block; margin-top: 0.8rem; font-size: 0.85rem; color: #4a90e2; font-weight: bold; }
+        footer { text-align: center; padding: 1.5rem; background: #333; color: #ccc; font-size: 0.9rem; margin-top: auto; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nihat Öğretmen Etkinlikleri</h1>
+        <p>Eğitim Materyalleri ve Özel Çalışmalar Arşivi</p>
+    </header>
+
+    <main>
+        <section class="welcome-box">
+            <h2>Hoş Geldiniz!</h2>
+            <p style="margin-top: 0.5rem; color: #555;">Bu platformda öğrencilerim ve meslektaşlarım için hazırladığım özgün etkinlikleri, dokümanları ve dijital çalışmaları paylaşıyorum.</p>
+        </section>
+
+        <h2 class="section-title">Aktif Çalışmalarım</h2>
+        <div class="grid">
+            
+            <!-- 10 KASIM KARTI (Linkini sonra bağlayacağız) -->
+            <a href="10kasim.html" class="card">
+                <h3>10 Kasım Özel Sayfası</h3>
+                <p>Mustafa Kemal Atatürk'ü anma günü için hazırladığım özel dijital çalışma.</p>
+                <span class="btn">İncele →</span>
+            </a>
+
+            <!-- İleride ekleyeceğiniz örnek bir PDF alanı -->
+            <div class="card" style="border-left-color: #a0aec0; opacity: 0.7;">
+                <h3>Yeni Etkinlikler</h3>
+                <p>Yakında yüklenecek olan ders materyalleri ve PDF dosyaları burada yer alacak.</p>
+                <span class="btn" style="color: #718096;">Beklemede</span>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Nihat Öğretmen Etkinlikleri. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
